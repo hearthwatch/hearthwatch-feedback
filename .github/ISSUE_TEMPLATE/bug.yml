@@ -1,0 +1,30 @@
+name: Bug report
+description: Something in the dashboard, addon or companion is broken or wrong.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Issues are public. Never include your group token, invite link or other private group details.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options: [Dashboard (desktop), Dashboard (phone), Addon, Windows companion, Not sure]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Companion or addon version, if you know it.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or notes
